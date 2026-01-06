@@ -1,0 +1,22 @@
+{
+    "titles": [
+        {
+            "name": "Qentine Tarantino",
+            "role": "Dyrector",
+            "start": "00:00:00",
+            "end": "00:00:03"
+        },
+        {
+            "name": "Marlene Dietrich",
+            "role": "",
+            "start": "00:00:03",
+            "end": "00:00:06"
+        },
+        {
+            "name": "Example Text",
+            "role": "Editor",
+            "start": "00:00:06",
+            "end": "00:00:09"
+        }
+    ]
+}

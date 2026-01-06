@@ -1,0 +1,33 @@
+{
+    "composition": {
+        "name": "Test",
+        "width": 1920,
+        "height": 1080,
+        "fps": 25
+    },
+
+    "roleStyle": {
+        "font": "Lato-Light",
+        "fontSize": 70,
+        "tracking": 20,
+        "leading": 30,
+        "color": [0.9, 0.9, 0.9]
+
+    },
+
+    "nameStyle": {
+        "font": "Lato-Semibold",
+        "fontSize": 90,
+        "tracking": 10,
+        "leading": 60,
+        "color": [1, 1, 1]
+
+    },
+
+    "background": {
+      "transparent": false,
+      "color": [0, 0, 0],
+      "name": "BG"
+    }
+}
+

@@ -1,0 +1,99 @@
+HOW TO USE — Title Generator
+
+
+This document explains how to use the Title Generator step by step.
+No programming knowledge is required.
+
+
+--------------------------------------------------
+1. INPUT CSV
+--------------------------------------------------
+
+The generator uses a CSV file as input data.
+
+Location:
+- The CSV file must be placed inside the Data folder.
+- Do NOT rename or move the Data folder.
+
+Required columns:
+- name
+- role(optional)
+The role column may be left empty (e.g. for actors).
+Titles will still be generated correctly.
+- start
+- end
+
+Time format:
+- HH:MM:SS
+- Example: 00:00:05
+
+You can edit the CSV file using any text editor or spreadsheet software.
+Make sure the file structure and column names remain unchanged.
+
+
+--------------------------------------------------
+2. CONFIGURATION FILE (ConfigJohnson)
+--------------------------------------------------
+
+The configuration file controls global settings for the composition.
+
+What you can configure:
+- Composition duration
+- Resolution and frame rate
+- Text appearance
+- Background behavior
+
+Background option:
+- transparent: false
+  Creates titles with a visible background.
+
+- transparent: true
+  Creates titles with a fully transparent background.
+  Useful for overlaying titles on top of video.
+
+The config file can be opened with a text editor.
+On macOS it may also open automatically in After Effects — this is normal.
+
+
+--------------------------------------------------
+3. WORKFLOW (STEP BY STEP)
+--------------------------------------------------
+
+1. Edit the input CSV file.
+2. Adjust settings in the configuration file if needed.
+3. Install After Effects Script
+
+To make the script available directly inside After Effects, you must copy it into the After Effects Scripts folder.
+
+1. Locate the script file:
+   ae/TitleGenerator.jsx
+
+2. Copy it to the After Effects Scripts directory:
+
+   macOS:
+   Applications/Adobe After Effects <version>/Scripts/
+
+   Windows:
+   C:\Program Files\Adobe\Adobe After Effects <version>\Scripts\
+
+3. Restart After Effects.
+
+After that, the script will appear in:
+File → Scripts → TitleGenerator
+
+This allows you to run the script directly from After Effects without using file search.
+
+4. Run the generator script.
+5. Titles are generated automatically based on the data.
+
+
+--------------------------------------------------
+4. IMPORTANT NOTES
+--------------------------------------------------
+
+- Do NOT move or rename project folders.
+- After Effects uses fixed paths to locate input data.
+- The generator reads files only from its own project structure.
+- Make sure Python is installed before running the Python part.
+
+
